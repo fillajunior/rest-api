@@ -15,9 +15,6 @@ class LoginController extends Controller
         User::create([
             'username'      => $request->username,
             'password'      => Hash::make($request->password),
-            'total_skor'    => 0,
-            'jumlah_salah'  => 0,
-            'save_file'     => false,
         ]);
 
         return response()->json(['status_code' => 200]);

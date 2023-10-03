@@ -15,9 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('username')->unique();
             $table->string('password');
-            $table->integer('total_skor');
-            $table->integer('jumlah_salah');
-            $table->boolean('save_file');
+            $table->integer('total_skor')->defalut(0);
+            $table->time('lama_waktu_bermain')->nullable();
+            $table->integer('bermain_sampai_akhir')->defalut(0);
+            $table->integer('jumlah_gagal_keseluruhan_evaluasi')->defalut(0);
+            $table->integer('jumlah_gagal_badge')->defalut(0);
+            $table->boolean('bermain_sampai_akhir')->defalut(false);
             $table->timestamps();
         });
     }

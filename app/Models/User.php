@@ -21,8 +21,11 @@ class User extends Authenticatable
         'username',
         'password',
         'total_skor',
-        'jumlah_salah',
-        'save_file',
+        'lama_waktu_bermain',
+        'bermain_sampai_akhir',
+        'jumlah_gagal_keseluruhan_evaluasi',
+        'jumlah_gagal_badge',
+        'bermain_sampai_akhir',
     ];
 
     /**
