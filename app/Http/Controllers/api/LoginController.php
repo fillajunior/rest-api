@@ -52,7 +52,7 @@ class LoginController extends Controller
                 ]);
             }
 
-            $tokenResult = $user->createToken();
+            $tokenResult = $user->createToken($request->username);
             return response()->json([
                 'status_code'   => 200,
                 'name'          => $tokenResult->accessToken->name,
