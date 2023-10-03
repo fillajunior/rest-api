@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('password');
             $table->integer('total_skor')->defalut(0);
             $table->time('lama_waktu_bermain')->nullable();
-            $table->integer('bermain_sampai_akhir')->defalut(0);
+            $table->integer('jumlah salah')->defalut(0);
             $table->integer('jumlah_gagal_keseluruhan_evaluasi')->defalut(0);
             $table->integer('jumlah_gagal_badge')->defalut(0);
             $table->boolean('bermain_sampai_akhir')->defalut(false);
